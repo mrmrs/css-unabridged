@@ -1,0 +1,52 @@
+/*
+  OUTLINES
+*/
+
+.oo--blk {      outline-color: $near-black; }
+.oo--dk-gry {   outline-color: $dark-gray; }
+.oo--md-gry {   outline-color: $mid-gray; }
+.oo--gray {     outline-color: $gray; }
+.oo--silver  {  outline-color: $silver; }
+.oo--lt-slvr {  outline-color: $light-silver; }
+.oo--lt-gry {   outline-color: $light-gray; }
+.oo--near-wht { outline-color: $near-white; }
+.oo--wht {      outline-color: $white; }
+
+
+/* Outline Styles */
+
+.os-none {      outline-style: none; }
+.os-dots {      outline-style: dotted; }
+.os-dash {      outline-style: dashed; }
+.os-solid {     outline-style: solid; }
+.os-double {    outline-style: double; }
+.os-groove {    outline-style: groove; }
+.os-ridge {     outline-style: ridge; }
+.os-inset {     outline-style: inset; }
+.os-outset {    outline-style: outset; }
+.os-inherit {   outline-style: inherit; }
+
+
+/* Outline Widths */
+
+.ow-thin {      outline-width: thin; }
+.ow-med {       outline-width: medium; }
+.ow-thick {     outline-width: thick; }
+.ow-3 {         outline-width: 1px; }
+.ow-2 {         outline-width: 2px; }
+.ow-3 {         outline-width: 3px; }
+.ow-4 {         outline-width: 4px; }
+.ow-5 {         outline-width: 5px; }
+.ow-6 {         outline-width: 6px; }
+.ow-7 {         outline-width: 7px; }
+.ow-8 {         outline-width: 8px; }
+.ow-9 {         outline-width: 9px; }
+.ow-10 {        outline-width: 10px; }
+.ow-i {         outline-width: inherit; }
+
+.oo-1 {         outline-offset: 1px; }
+.oo-2 {         outline-offset: .25rem; }
+.oo-3 {         outline-offset: .5rem; }
+.oo-4 {         outline-offset: 1rem; }
+.oo-5 {         outline-offset: 2rem; }
+.oo-i {         outline-offset: inherit; }

@@ -1,0 +1,153 @@
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Legend:
+
+   p = padding
+   m = margin
+
+   a = all
+   h = horizontal
+   v = vertical
+   t = top
+   r = right
+   b = bottom
+   l = left
+
+   n = none
+   xs = extra small
+   s = small
+   m = medium
+   l = large
+   x = extra
+   xl = extra large
+   xxl = extra extra large
+
+    */
+
+.pan  {  padding: 0; }
+.paxs {  padding: .25rem; }
+.pas  {  padding: .5rem; }
+.pam  {  padding: 1rem; }
+.pal  {  padding: 2rem; }
+.pax  {  padding: 4rem; }
+.paxl {  padding: 8rem; }
+.paxxl { padding: 16rem; }
+
+.pln  {  padding-left: 0; }
+.plxs {  padding-left: .25rem; }
+.pls  {  padding-left: .5rem; }
+.plm  {  padding-left: 1rem; }
+.pll  {  padding-left: 2rem; }
+.plx  {  padding-left: 4rem; }
+.plxl {  padding-left: 8rem; }
+.plxxl { padding-left: 16rem; }
+
+.prn  {  padding-right: 0; }
+.prxs {  padding-right: .25rem; }
+.prs  {  padding-right: .5rem; }
+.prm  {  padding-right: 1rem; }
+.prl  {  padding-right: 2rem; }
+.prx  {  padding-right: 4rem; }
+.prxl {  padding-right: 8rem; }
+.prxxl { padding-right: 16rem; }
+
+.pbn  {  padding-bottom: 0; }
+.pbxs {  padding-bottom: .25rem; }
+.pbs  {  padding-bottom: .5rem; }
+.pbm  {  padding-bottom: 1rem; }
+.pbl  {  padding-bottom: 2rem; }
+.pbx  {  padding-bottom: 4rem; }
+.pbxl {  padding-bottom: 8rem; }
+.pbxxl { padding-bottom: 16rem; }
+
+.ptn  {  padding-top: 0; }
+.ptxs {  padding-top: .25rem; }
+.pts  {  padding-top: .5rem; }
+.ptm  {  padding-top: 1rem; }
+.ptl  {  padding-top: 2rem; }
+.ptx  {  padding-top: 4rem; }
+.ptxl {  padding-top: 8rem; }
+.ptxxl { padding-top: 16rem; }
+
+.pvn {   padding-top: 0;       padding-bottom: 0; }
+.pvxs {  padding-top: .25rem;  padding-bottom: .25rem; }
+.pvs {   padding-top: .5rem;   padding-bottom: .5rem; }
+.pvm {   padding-top: 1rem;    padding-bottom: 1rem; }
+.pvl {   padding-top: 2rem;    padding-bottom: 2rem; }
+.pvx {   padding-top: 4rem;    padding-bottom: 4rem; }
+.pvxl {  padding-top: 8rem;    padding-bottom: 8rem; }
+.pvxxl { padding-top: 16rem;   padding-bottom: 16rem; }
+
+.phn {   padding-left: 0;      padding-right: 0; }
+.pvxs {  padding-left: .25rem; padding-right: .25rem; }
+.phs {   padding-left: .5rem;  padding-right: .5rem; }
+.phm {   padding-left: 1rem;   padding-right: 1rem; }
+.phl {   padding-left: 2rem;   padding-right: 2rem; }
+.phx {   padding-left: 4rem;   padding-right: 4rem; }
+.phxl {  padding-left: 8rem;   padding-right: 8rem; }
+.phxxl { padding-left: 16rem;  padding-right: 16rem; }
+
+.man  {  margin: 0; }
+.maxs {  margin: .25rem; }
+.mas  {  margin: .5rem; }
+.mam  {  margin: 1rem; }
+.mal  {  margin: 2rem; }
+.max  {  margin: 4rem; }
+.maxl {  margin: 8rem; }
+.maxxl { margin: 16rem; }
+
+.mln  {  margin-left: 0; }
+.mlxs {  margin-left: .25rem; }
+.mls  {  margin-left: .5rem; }
+.mlm  {  margin-left: 1rem; }
+.mll  {  margin-left: 2rem; }
+.mlx  {  margin-left: 4rem; }
+.mlxl {  margin-left: 8rem; }
+.mlxxl { margin-left: 16rem; }
+
+.mrn  {  margin-right: 0; }
+.mrxs {  margin-right: .25rem; }
+.mrs  {  margin-right: .5rem; }
+.mrm  {  margin-right: 1rem; }
+.mrl  {  margin-right: 2rem; }
+.mrx  {  margin-right: 4rem; }
+.mrxl {  margin-right: 8rem; }
+.mrxxl { margin-right: 16rem; }
+
+.mbn  {  margin-bottom: 0; }
+.mbxs {  margin-bottom: .25rem; }
+.mbs  {  margin-bottom: .5rem; }
+.mbm  {  margin-bottom: 1rem; }
+.mbl  {  margin-bottom: 2rem; }
+.mbx  {  margin-bottom: 4rem; }
+.mbxl {  margin-bottom: 8rem; }
+.mbxxl { margin-bottom: 16rem; }
+
+.mtn  {  margin-top: 0; }
+.mtxs {  margin-top: .25rem; }
+.mts  {  margin-top: .5rem; }
+.mtm  {  margin-top: 1rem; }
+.mtl  {  margin-top: 2rem; }
+.mtx  {  margin-top: 4rem; }
+.mtxl {  margin-top: 8rem; }
+.mtxxl { margin-top: 16rem; }
+
+.mvn   { margin-top: 0;      margin-bottom: 0rem; }
+.mvxs  { margin-top: .25rem; margin-bottom: .25rem; }
+.mvs   { margin-top: .5rem;  margin-bottom: .5rem; }
+.mvm   { margin-top: 1rem;   margin-bottom: 1rem; }
+.mvl   { margin-top: 2rem;   margin-bottom: 2rem; }
+.mvx   { margin-top: 4rem;   margin-bottom: 4rem; }
+.mvxl  { margin-top: 8rem;   margin-bottom: 8rem; }
+.mvxl  { margin-top: 16rem;   margin-bottom: 16rem; }
+
+.mhn   {  margin-left: 0;     margin-right: 0; }
+.mhs   {  margin-left: .5rem; margin-right: .5rem; }
+.mhm   {  margin-left: 1rem;  margin-right: 1rem; }
+.mhl   {  margin-left: 2rem;  margin-right: 2rem; }
+.mhx   {  margin-left: 4rem;  margin-right: 4rem; }
+.mhxl  {  margin-left: 8rem;  margin-right: 8rem; }
+.mhxxl  { margin-left: 16rem; margin-right: 16rem; }

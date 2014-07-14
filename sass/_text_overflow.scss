@@ -1,0 +1,14 @@
+/*
+   TEXT OVERFLOW
+*/
+
+.t-clip { text-overflow: clip; }
+.t-ellipsis { text-overflow: ellipsis; }
+.t-dots { text-overflow: "…"; }
+
+/* Two-value syntax: the first value describes the overflow at the left end of the line,
+                     the second at the right end. Directionality has no influence */
+
+.t-clip-ellipsis { text-overflow: clip ellipsis; }
+.t-double { text-overflow: "…" "…"; }
+.t-i { text-overflow: inherit; }
