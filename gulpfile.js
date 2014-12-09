@@ -1,6 +1,6 @@
 // Gulp tasks for TRIM
 
-// Load plugins 
+// Load plugins
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     watch = require('gulp-watch'),
@@ -23,10 +23,10 @@ var gulp = require('gulp'),
 // Minify all css files in the css directory
 // Run this in the root directory of the project with `gulp minify-css `
 gulp.task('minify-css', function(){
-  gulp.src('./css/i.css')
+  gulp.src('./css/unabridged.css')
     .pipe(minifyCSS())
     .pipe(size({gzip: true, showFiles: true, title:'minified css'}))
-    .pipe(rename('i.min.css'))
+    .pipe(rename('unabridged.min.css'))
     .pipe(gulp.dest('./css/'));
 });
 
@@ -40,7 +40,7 @@ gulp.task('minify-images', function(){
         .pipe(gulp.dest('dist'));
 });
 
-// Concat all js files into one. If you add js files, you need to explicitly 
+// Concat all js files into one. If you add js files, you need to explicitly
 // add them in the order you want them added to the final js.
 gulp.task('js-concat', function() {
   gulp.src(['js/base.js', 'js/home.js'])
@@ -66,7 +66,7 @@ gulp.task('js-min', function() {
 // Use csslint without box-sizing or compatible vendor prefixes (these
 // don't seem to be kept up to date on what to yell about)
 gulp.task('csslint', function(){
-  gulp.src('./css/i.css')
+  gulp.src('./css/unabridged.css')
     .pipe(csslint({
           'compatible-vendor-prefixes': false,
           'box-sizing': false,
@@ -78,11 +78,17 @@ gulp.task('csslint', function(){
 
 // Task that compiles scss files down to good old css
 gulp.task('pre-process', function(){
-    gulp.src('./sass/i.scss')
+    gulp.src('./sass/unabridged.scss')
         .pipe(sass())
         .pipe(prefix())
+        .pipe(size({gzip: false, showFiles: true, title:'uncompiled'}))
         .pipe(size({gzip: true, showFiles: true, title:'uncompiled'}))
         .pipe(gulp.dest('css'))
+        .pipe(minifyCSS())
+        .pipe(rename('unabridged.min.css'))
+        .pipe(size({gzip: false, showFiles: true, title:'minified css'}))
+        .pipe(size({gzip: true, showFiles: true, title:'minified css'}))
+        .pipe(gulp.dest('./css/'))
         .pipe(browserSync.reload({stream:true}));
 });
 
@@ -96,7 +102,7 @@ gulp.task('uncss', function(){
         .pipe(gulp.dest('css'))
 });
 
-// Initialize browser-sync which starts a static server also allows for 
+// Initialize browser-sync which starts a static server also allows for
 // browsers to reload on filesave
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
@@ -119,11 +125,11 @@ gulp.task('bs-reload', function () {
  • Reloads browsers when you change html or sass files
 
 */
-gulp.task('default', ['pre-process', 'minify-css', 'bs-reload', 'browser-sync'], function(){
+gulp.task('default', ['pre-process', 'bs-reload', 'browser-sync'], function(){
   gulp.start('pre-process', 'csslint');
   gulp.watch('js/app.js', ['js-hint']);
   gulp.watch('sass/*.scss', ['pre-process']);
-  gulp.watch('css/i.css', ['minify-css', 'bs-reload']);
+  gulp.watch('css/*.css', ['minify-css', 'bs-reload']);
   gulp.watch('*.html', ['bs-reload']);
 });
 
