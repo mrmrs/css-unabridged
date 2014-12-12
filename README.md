@@ -6,6 +6,11 @@ The entire css spec as single purpose classes.
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 
+## Filesizes
+
+unabridged.min.css 94.07 kB
+unabridged.min.css 20.15 kB (gzipped)
+
 # License
 
 The MIT License (MIT)
