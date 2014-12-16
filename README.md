@@ -1,15 +1,30 @@
 # CSS UNABRIDGED
 
-The entire css spec as single purpose classes.
+## What is this?
+
+1. An experiment
+2. The answer to a question I started to ask after noticing websites serve up 200kb - 1MB+ css files.
+3. A framework I can use to apply performance tests to extreme oocss concepts
+
+## The Question
+
+> "How big is the entire css language? Is it bigger or smaller than 500K?"
+
+So, what is css unabridged? It is an attempt to put the entire css language in one file.
+For the most part it's a bunch of single purpose classes plus a few other utilities (like normalize.css) that I frequently use in web projects.
+The file is meant to be a representation of an extreme amount of css.
+
+I develop this in conjunction with [css uncut](http://github.com/mrmrs/css-uncut) which pushes this concept even further
+by name spacing each base class to target 3 additional breakpoints.
 
 # References
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 
-## Filesizes
+## Filesize
 
-unabridged.min.css 94.07 kB
-unabridged.min.css 20.15 kB (gzipped)
+* unabridged.min.css 94.07 kB
+* unabridged.min.css 20.15 kB (gzipped)
 
 # License
 
