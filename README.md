@@ -17,16 +17,18 @@ The file is meant to be a representation of an extreme amount of css.
 I develop this in conjunction with [css uncut](http://github.com/mrmrs/css-uncut) which pushes this concept even further
 by name spacing each base class to target 3 additional breakpoints.
 
-# References
+## Filesizes
+
+* unabridged.css 164.06 kB
+* unabridged.min.css 112.63 kB
+* unabridged.min.css 25.37 kB (gzipped)
+
+## References
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 
-## Filesize
 
-* unabridged.min.css 94.07 kB
-* unabridged.min.css 20.15 kB (gzipped)
-
-# License
+## License
 
 The MIT License (MIT)
 
